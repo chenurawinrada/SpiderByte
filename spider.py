@@ -21,7 +21,35 @@ C = Fore.CYAN
 
 os.system("cls")
 time.sleep(1)
+def spider_animation():
+    SPIDERS1 = """
+      █       █
+     █  *███*  █
+       ███████
+     █   ███   █
+    █  █  *  █  █
+        █   █
+    """
 
+    SPIDERS2 = """
+    █           █
+     █  *███*  █
+    █  ███████  █
+     █   ███   █
+       █  *  █  
+      █       █
+    """
+    count = 0
+    for i in range(20):
+        if count == 0:
+            _SPIDERS_ = SPIDERS1
+            count = 1
+        elif count == 1:
+            count = 0
+            _SPIDERS_ = SPIDERS2
+        print(_SPIDERS_)
+        time.sleep(0.5)
+        os.system('cls')
 
 def load_animation(text):
     # String to be displayed when the application is loading
@@ -38,7 +66,6 @@ def load_animation(text):
 
     # pointer for travelling the loading string
     i = 0
-
     while (counttime != 100):
         os.system('')
         # used to change the animation speed
@@ -85,34 +112,35 @@ def load_animation(text):
 
 # Running first animation
 load_animation("starting spiderbyte....")
+spider_animation()
 
-print("Executing SpiderByte help....")
-# Second animation(Spinner)
-syms = ['\\', '|', '/', '-']
-bs = '\b'
-
-for _ in range(10):
-    for sym in syms:
-        sys.stdout.write("\b%s" % sym)
-        sys.stdout.flush()
-        time.sleep(0.05)
-os.system('cls')
 # Bannar
 print("Welcome!")
 print(f"""{C}
-*****************************************************************
-*|█████████████████████████████████████████████████████████████|*
-*|█─▄▄▄▄█▄─▄▄─█▄─▄█▄─▄▄▀█▄─▄▄─█▄─▄▄▀███▄─▄─▀█▄─█─▄█─▄─▄─█▄─▄▄─█|*
-*|█▄▄▄▄─██─▄▄▄██─███─██─██─▄█▀██─▄─▄████─▄─▀██▄─▄████─████─▄█▀█|*
-*|▀▄▄▄▄▄▀▄▄▄▀▀▀▄▄▄▀▄▄▄▄▀▀▄▄▄▄▄▀▄▄▀▄▄▀▀▀▄▄▄▄▀▀▀▄▄▄▀▀▀▄▄▄▀▀▄▄▄▄▄▀|*
-*|*************{Y}Version 3.0{C}*********************{G}By:-MaxMouse{C}****|*
-*****************************************************************
+..........................................................................................................
+         █           █                                                                                       
+    █   █             █   █
+   █   █               █   █
+    █   ██           ██   █
+     ██   ██ *███* ██   ██
+       ███  ███████  ███              *****************************************************************
+           █████████                  *|█████████████████████████████████████████████████████████████|*
+        ███  █████  ███               *|█─▄▄▄▄█▄─▄▄─█▄─▄█▄─▄▄▀█▄─▄▄─█▄─▄▄▀███▄─▄─▀█▄─█─▄█─▄─▄─█▄─▄▄─█|*
+      ██    ███████    ██             *|█▄▄▄▄─██─▄▄▄██─███─██─██─▄█▀██─▄─▄████─▄─▀██▄─▄████─████─▄█▀█|*
+     █    ██ █████ ██    █            *|▀▄▄▄▄▄▀▄▄▄▀▀▀▄▄▄▀▄▄▄▄▀▀▄▄▄▄▄▀▄▄▀▄▄▀▀▀▄▄▄▄▀▀▀▄▄▄▀▀▀▄▄▄▀▀▄▄▄▄▄▀|*
+    █    █  ███████  █    █           *|*************{Y}Version 4.0{C}*********************{G}By:-MaxMouse{C}****|*   
+   █    █  █████████  █    █          *****************************************************************
+    █   █    █████    █   █
+     █   █     █     █   █
+          █         █
+           █       █.....................................................................................
+
 {G}""")
 
 c = ""
 z = ""
 
-print(f"{R}Think before you go, {C}great powers {G}come with a great {Y}responsibility....{G}")
+#print(f"{R}Think before you go, {C}great powers {G}come with a great {Y}responsibility....{G}")
 
 # Defining the help (main help)
 
